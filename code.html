@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en" style=""><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ALEXANDER.V - Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Sora:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-primary-fixed-variant": "#5a00c6",
+                      "surface-bright": "#3a3939",
+                      "on-secondary-fixed-variant": "#004c6e",
+                      "background": "#131313",
+                      "on-primary": "#3f008e",
+                      "on-secondary": "#00344d",
+                      "surface-variant": "#353534",
+                      "surface": "#131313",
+                      "on-secondary-container": "#00344e",
+                      "error-container": "#93000a",
+                      "on-background": "#e5e2e1",
+                      "tertiary": "#ffb784",
+                      "surface-dim": "#131313",
+                      "outline": "#958da1",
+                      "outline-variant": "#4a4455",
+                      "primary-fixed": "#eaddff",
+                      "surface-container-low": "#1c1b1b",
+                      "surface-tint": "#d2bbff",
+                      "inverse-surface": "#e5e2e1",
+                      "primary-fixed-dim": "#d2bbff",
+                      "secondary-fixed": "#c9e6ff",
+                      "on-tertiary-container": "#ffe0cd",
+                      "surface-container-high": "#2a2a2a",
+                      "on-primary-container": "#ede0ff",
+                      "on-tertiary": "#4f2500",
+                      "on-surface": "#e5e2e1",
+                      "primary-container": "#7c3aed",
+                      "on-surface-variant": "#ccc3d8",
+                      "surface-container-lowest": "#0e0e0e",
+                      "on-error-container": "#ffdad6",
+                      "on-tertiary-fixed": "#301400",
+                      "surface-container": "#201f1f",
+                      "on-secondary-fixed": "#001e2f",
+                      "secondary": "#89ceff",
+                      "tertiary-container": "#a15100",
+                      "error": "#ffb4ab",
+                      "tertiary-fixed": "#ffdcc6",
+                      "inverse-primary": "#732ee4",
+                      "surface-container-highest": "#353534",
+                      "on-error": "#690005",
+                      "primary": "#d2bbff",
+                      "secondary-fixed-dim": "#89ceff",
+                      "on-tertiary-fixed-variant": "#713700",
+                      "secondary-container": "#00a2e6",
+                      "inverse-on-surface": "#313030",
+                      "on-primary-fixed": "#25005a",
+                      "tertiary-fixed-dim": "#ffb784"
+              },
+              "borderRadius": {
+                      "DEFAULT": "1rem",
+                      "lg": "2rem",
+                      "xl": "3rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-mobile": "16px",
+                      "unit": "8px",
+                      "gutter": "24px",
+                      "container-max": "1280px",
+                      "margin-desktop": "40px",
+                      "bento-gap": "16px"
+              },
+              "fontFamily": {
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "display-lg": [
+                              "Sora"
+                      ],
+                      "label-sm": [
+                              "Inter"
+                      ],
+                      "headline-md": [
+                              "Sora"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "display-lg-mobile": [
+                              "Sora"
+                      ]
+              },
+              "fontSize": {
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "display-lg": [
+                              "64px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "0.04em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "1",
+                                      "letterSpacing": "0.08em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "letterSpacing": "0.02em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "letterSpacing": "0",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "display-lg-mobile": [
+                              "40px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-top: 1px solid rgba(255, 255, 255, 0.12);
+            border-left: 1px solid rgba(255, 255, 255, 0.12);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #e5e2e1 0%, #a15100 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+        }
+
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: opacity, transform, visibility;
+        }
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: none;
+        }
+
+        /* Reduced motion */
+        @media (prefers-reduced-motion: reduce) {
+            .fade-in-section {
+                transition: none;
+                opacity: 1;
+                transform: none;
+            }
+            .transition-all, .transition-colors, .transition-transform {
+                transition: none !important;
+            }
+            #particles-js {
+                display: none;
+            }
+        }
+
+        /* Nav Transition */
+        #main-nav {
+            transition: background-color 0.4s ease, border-color 0.4s ease, backdrop-filter 0.4s ease;
+        }
+        #main-nav.scrolled {
+            background-color: rgba(20, 20, 20, 0.8);
+            backdrop-filter: blur(40px);
+            -webkit-backdrop-filter: blur(40px);
+            border-bottom-color: rgba(255, 255, 255, 0.15);
+        }
+      </style>
+</head>
+<body class="bg-background text-on-background font-body-lg antialiased overflow-x-hidden selection:bg-primary-container selection:text-on-primary-container">
+<!-- Particle Background -->
+<canvas id="particles-js"></canvas>
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 bg-white/5 backdrop-blur-[30px] border-b border-white/10 transition-all duration-300" id="main-nav">
+<div class="flex items-center gap-4">
+<a class="font-display-lg text-[24px] font-bold tracking-tighter text-on-surface dark:text-on-surface hover:text-primary transition-colors duration-300" href="#">VARUN.R</a>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant font-medium font-label-sm text-label-sm hover:text-primary transition-all duration-300 transform hover:-translate-y-0.5" href="#about">About</a>
+<a class="text-on-surface-variant font-medium font-label-sm text-label-sm hover:text-primary transition-all duration-300 transform hover:-translate-y-0.5" href="#work">Projects</a>
+<a class="text-on-surface-variant font-medium font-label-sm text-label-sm hover:text-primary transition-all duration-300 transform hover:-translate-y-0.5" href="#contact">Contact</a>
+</div>
+<div class="flex items-center">
+<a class="hidden md:flex items-center justify-center bg-primary-container text-on-primary-container px-6 py-2 rounded-full font-label-sm text-label-sm hover:bg-primary hover:text-on-primary hover:shadow-[0_0_20px_rgba(124,58,237,0.4)] transition-all duration-300 transform hover:scale-105 active:scale-95" href="mailto:hello@varunr.design?subject=Project%20Inquiry">Hire Me</a>
+<button class="md:hidden text-on-surface p-2 hover:text-primary transition-colors duration-300">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop pt-32 pb-24">
+<!-- Hero Section -->
+<section class="min-h-[716px] flex flex-col justify-center items-start mb-32 fade-in-section">
+<div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-container/10 border border-primary-container/20 mb-8 transition-transform duration-500 hover:scale-105">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">Available for new projects</span>
+</div>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg max-w-4xl mb-6 leading-tight">
+                ASPIRING UI/UX <br class="hidden md:block"/> DESIGNER
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-10">
+                Recent graduate passionate about crafting intuitive digital experiences. Ready to bring fresh perspectives to innovative teams and elevate brands through user-centered design.
+            </p>
+<div class="flex gap-4">
+<button class="bg-primary-container text-on-primary-container px-8 py-4 rounded-full font-label-sm text-label-sm hover:bg-primary hover:text-on-primary hover:shadow-[0_0_25px_rgba(124,58,237,0.5)] transition-all duration-300 transform hover:scale-105 active:scale-95 flex items-center gap-2 group">
+                    View Work <span class="material-symbols-outlined text-sm transform group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
+</button>
+</div>
+</section>
+<!-- Projects Bento Grid -->
+<section class="mb-32 scroll-mt-32" id="work">
+<div class="flex justify-between items-end mb-12 fade-in-section">
+<h2 class="font-headline-md text-headline-md">Projects</h2>
+<a class="font-label-sm text-label-sm text-primary hover:text-primary-fixed transition-colors duration-300 hidden md:block hover:underline underline-offset-4" href="#">View All Experience</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-bento-gap auto-rows-[300px] md:auto-rows-[400px]">
+<!-- Education Card -->
+<a class="md:col-span-8 glass-panel rounded-3xl p-8 flex flex-col justify-between group hover:border-primary/50 hover:shadow-[0_0_30px_rgba(124,58,237,0.15)] transform hover:scale-[1.02] transition-all duration-500 overflow-hidden relative fade-in-section" href="#">
+<div class="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent z-10 transition-opacity duration-500 group-hover:opacity-80"></div>
+<img alt="Education Background" class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:scale-110 transition-transform duration-1000 ease-out z-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCe1WBbXJFrefUBkAmzx7SKngaY4HPzHC7ZlR8tyu35s-9Dq_anddeFAGDVz4kCvHc8DnCOdZZFu_3I542vQIQFfyLrEu4EBqVDiPit3qASpg5-ez0bAVILP-wAzlNLSHmAzqIHVGLuc2Aj8KKsY_2WeXP6FssjolkSKtqsBPuEyGnN5X9GKzELko1kRaCufTqc_ILUXlPzCobFLzCkUJUGc3vvNk5Ii4s-Bq3n3yKGWTyXo-Hr0k_a_EGsyQlBiuan6gq5BkuycrQ"/>
+<div class="relative z-20 flex justify-end">
+<div class="w-12 h-12 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-colors duration-300">
+<span class="material-symbols-outlined transform -rotate-45 group-hover:rotate-0 group-hover:scale-110 transition-all duration-300">arrow_forward</span>
+</div>
+</div>
+<div class="relative z-20 mt-auto transform transition-transform duration-500 group-hover:-translate-y-2">
+<div class="flex gap-2 mb-4">
+<span class="px-3 py-1 rounded-full bg-primary/10 text-primary font-label-sm text-[10px] transition-colors duration-300 group-hover:bg-primary/20">B.Des</span>
+<span class="px-3 py-1 rounded-full bg-primary/10 text-primary font-label-sm text-[10px] transition-colors duration-300 group-hover:bg-primary/20">3.9 GPA</span>
+<span class="px-3 py-1 rounded-full bg-primary/10 text-primary font-label-sm text-[10px] transition-colors duration-300 group-hover:bg-primary/20">HCI Focus</span>
+</div>
+<h3 class="font-headline-md text-2xl mb-2 transition-colors duration-300 group-hover:text-primary">Education: Bachelor of Design</h3>
+<p class="font-body-md text-on-surface-variant max-w-md transition-colors duration-300 group-hover:text-on-surface">Graduated with honors, focusing on user interaction, rapid prototyping, and design systems. Core coursework: HCI, Visual Design, User Research.</p>
+</div>
+</a>
+<!-- Academic Capstone -->
+<a class="md:col-span-4 glass-panel rounded-3xl p-8 flex flex-col justify-between group hover:border-primary/50 hover:shadow-[0_0_30px_rgba(124,58,237,0.15)] transform hover:scale-[1.02] transition-all duration-500 overflow-hidden relative fade-in-section" href="#" style="transition-delay: 100ms;">
+<div class="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent z-10 transition-opacity duration-500 group-hover:opacity-80"></div>
+<img alt="Academic Capstone" class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:scale-110 transition-transform duration-1000 ease-out z-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpMG9gdo8DW92KFwtOXYrJdYwbT0_Z4TbKd9vWQM6WxiFQWjZyTF7n6M-x5LNTpe78M4KuX5tS7MWrd9cYlCZStE3iRE79p39MVfF4P4u9-2ZemZ-_TfrgR9SYGC-0N_BONUcV-mZ1WY8okUtiQg4o8jN412SeP09w88nq9QqBcjyLsP1jZaySUEw4mNQUx7-XKnSp9iMcazJjn7ba_zFNmH1RbMB7kH0Ef5zHSLbWCPui1FjKL5HXi7FVEIEEkqWZ8cNHOyBOQvo"/>
+<div class="relative z-20 flex justify-end">
+<div class="w-12 h-12 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-colors duration-300">
+<span class="material-symbols-outlined transform -rotate-45 group-hover:rotate-0 group-hover:scale-110 transition-all duration-300">arrow_forward</span>
+</div>
+</div>
+<div class="relative z-20 mt-auto transform transition-transform duration-500 group-hover:-translate-y-2">
+<div class="flex gap-2 mb-4">
+<span class="px-3 py-1 rounded-full bg-primary/10 text-primary font-label-sm text-[10px] transition-colors duration-300 group-hover:bg-primary/20">UI/UX</span>
+<span class="px-3 py-1 rounded-full bg-primary/10 text-primary font-label-sm text-[10px] transition-colors duration-300 group-hover:bg-primary/20">Figma</span>
+</div>
+<h3 class="font-headline-md text-xl mb-2 transition-colors duration-300 group-hover:text-primary">Academic Capstone</h3>
+<p class="font-body-md text-on-surface-variant text-sm transition-colors duration-300 group-hover:text-on-surface">A comprehensive end-to-end design project solving complex user needs through iterative research and testing.</p>
+</div>
+</a></div>
+</section>
+<!-- About Section -->
+<section class="mb-32 scroll-mt-32" id="about">
+<div class="mb-12 fade-in-section">
+<h2 class="font-headline-md text-headline-md">Educational Journey</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-bento-gap">
+<div class="glass-panel rounded-3xl p-8 flex flex-col group hover:border-primary/50 hover:shadow-[0_0_25px_rgba(124,58,237,0.15)] transform hover:-translate-y-2 transition-all duration-500 fade-in-section">
+<span class="text-primary font-label-sm mb-4 inline-block bg-primary/10 px-3 py-1 rounded-full w-max transition-colors duration-300 group-hover:bg-primary/20">2020 - 2024</span>
+<h3 class="font-headline-md text-xl mb-2 transition-colors duration-300 group-hover:text-primary">Bachelor of Design</h3>
+<p class="font-body-md text-on-surface-variant transition-colors duration-300 group-hover:text-on-surface">College Name Placeholder</p>
+</div>
+<div class="glass-panel rounded-3xl p-8 flex flex-col group hover:border-primary/50 hover:shadow-[0_0_25px_rgba(124,58,237,0.15)] transform hover:-translate-y-2 transition-all duration-500 fade-in-section" style="transition-delay: 100ms;">
+<span class="text-primary font-label-sm mb-4 inline-block bg-primary/10 px-3 py-1 rounded-full w-max transition-colors duration-300 group-hover:bg-primary/20">2018 - 2020</span>
+<h3 class="font-headline-md text-xl mb-2 transition-colors duration-300 group-hover:text-primary">12th Grade</h3>
+<p class="font-body-md text-on-surface-variant transition-colors duration-300 group-hover:text-on-surface">School Name Placeholder</p>
+</div>
+<div class="glass-panel rounded-3xl p-8 flex flex-col group hover:border-primary/50 hover:shadow-[0_0_25px_rgba(124,58,237,0.15)] transform hover:-translate-y-2 transition-all duration-500 fade-in-section" style="transition-delay: 200ms;">
+<span class="text-primary font-label-sm mb-4 inline-block bg-primary/10 px-3 py-1 rounded-full w-max transition-colors duration-300 group-hover:bg-primary/20">2018</span>
+<h3 class="font-headline-md text-xl mb-2 transition-colors duration-300 group-hover:text-primary">10th Grade</h3>
+<p class="font-body-md text-on-surface-variant transition-colors duration-300 group-hover:text-on-surface">School Name Placeholder</p>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="mb-16 scroll-mt-32 fade-in-section" id="contact">
+<div class="glass-panel rounded-3xl p-12 text-center flex flex-col items-center justify-center relative overflow-hidden group hover:border-primary/30 transition-all duration-700 hover:shadow-[0_0_40px_rgba(124,58,237,0.1)]">
+<div class="absolute inset-0 bg-primary/5 group-hover:bg-primary/10 transition-colors duration-700"></div>
+<div class="relative z-10">
+<h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg mb-8 leading-tight text-gradient transform transition-transform duration-700 group-hover:scale-105">LET'S CONNECT</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-10 transition-colors duration-500 group-hover:text-on-surface">
+            I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.
+        </p>
+<div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+<a class="bg-primary-container text-on-primary-container px-8 py-4 rounded-full font-label-sm text-label-sm hover:bg-primary hover:text-on-primary hover:shadow-[0_0_25px_rgba(124,58,237,0.5)] transition-all duration-300 transform hover:scale-105 active:scale-95 flex items-center gap-2" href="mailto:hello@varunr.design">
+            hello@varunr.design
+          </a>
+<a class="glass-panel px-8 py-4 rounded-full font-label-sm text-label-sm text-on-surface hover:text-primary hover:border-primary/50 hover:bg-white/5 transition-all duration-300 transform hover:scale-105 active:scale-95 flex items-center gap-2" href="#">
+            LinkedIn Profile <span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-background dark:bg-background border-t border-white/5 py-16">
+<div class="flex flex-col md:flex-row justify-between items-center px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto gap-8">
+<div class="font-display-lg text-headline-md text-on-surface dark:text-on-surface hover:text-primary transition-colors duration-300 cursor-pointer">VARUN.R</div>
+<div class="flex flex-wrap gap-6 justify-center">
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary hover:-translate-y-0.5 transition-all duration-300 font-label-sm text-label-sm opacity-80 hover:opacity-100 inline-block" href="#about">About</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary hover:-translate-y-0.5 transition-all duration-300 font-label-sm text-label-sm opacity-80 hover:opacity-100 inline-block" href="#contact">Contact</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary hover:-translate-y-0.5 transition-all duration-300 font-label-sm text-label-sm opacity-80 hover:opacity-100 inline-block" href="#">LinkedIn</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary hover:-translate-y-0.5 transition-all duration-300 font-label-sm text-label-sm opacity-80 hover:opacity-100 inline-block" href="https://github.com/">GitHub</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary hover:-translate-y-0.5 transition-all duration-300 font-label-sm text-label-sm opacity-80 hover:opacity-100 inline-block" href="mailto:hello@varunr.design">Email</a>
+</div>
+<div class="font-body-md text-sm text-on-surface-variant">© 2024 Varun R. Crafted for Excellence.</div>
+</div>
+</footer>
+<script>
+        // Intersection Observer for fade-in elements
+        document.addEventListener("DOMContentLoaded", function() {
+            // Initial call to trigger visible elements on load
+            setTimeout(() => {
+                document.querySelectorAll('.fade-in-section').forEach(el => {
+                    const rect = el.getBoundingClientRect();
+                    if (rect.top < window.innerHeight) {
+                        el.classList.add('is-visible');
+                    }
+                });
+            }, 100);
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px 0px -50px 0px',
+                threshold: 0.15
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in-section').forEach((section) => {
+                observer.observe(section);
+            });
+        });
+
+        // Sticky Header scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('main-nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // Interactive particle simulation for background
+        const canvas = document.getElementById('particles-js');
+        const ctx = canvas.getContext('2d');
+        let particlesArray;
+        
+        let mouse = {
+            x: null,
+            y: null,
+            radius: 150
+        }
+
+        window.addEventListener('mousemove', function(event) {
+            mouse.x = event.x;
+            mouse.y = event.y;
+        });
+
+        window.addEventListener('mouseout', function() {
+            mouse.x = undefined;
+            mouse.y = undefined;
+        });
+
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        class Particle {
+            constructor(x, y, directionX, directionY, size, color) {
+                this.x = x;
+                this.y = y;
+                this.baseX = x;
+                this.baseY = y;
+                this.directionX = directionX;
+                this.directionY = directionY;
+                this.size = size;
+                this.color = color;
+                this.alpha = Math.random() * 0.5 + 0.1;
+            }
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
+                ctx.fillStyle = `rgba(210, 187, 255, ${this.alpha})`;
+                ctx.fill();
+            }
+            update() {
+                if (this.x > canvas.width || this.x < 0) {
+                    this.directionX = -this.directionX;
+                }
+                if (this.y > canvas.height || this.y < 0) {
+                    this.directionY = -this.directionY;
+                }
+                
+                // Interaction
+                let dx = mouse.x - this.x;
+                let dy = mouse.y - this.y;
+                let distance = Math.sqrt(dx * dx + dy * dy);
+                let forceDirectionX = dx / distance;
+                let forceDirectionY = dy / distance;
+                let maxDistance = mouse.radius;
+                let force = (maxDistance - distance) / maxDistance;
+                let directionX = forceDirectionX * force * 2;
+                let directionY = forceDirectionY * force * 2;
+
+                if (distance < mouse.radius) {
+                    this.x -= directionX;
+                    this.y -= directionY;
+                } else {
+                    if (this.x !== this.baseX) {
+                        let dx = this.x - this.baseX;
+                        this.x -= dx/20;
+                    }
+                    if (this.y !== this.baseY) {
+                        let dy = this.y - this.baseY;
+                        this.y -= dy/20;
+                    }
+                }
+
+                this.x += this.directionX;
+                this.y += this.directionY;
+                
+                // Update base position slightly so they wander
+                this.baseX += this.directionX * 0.5;
+                this.baseY += this.directionY * 0.5;
+
+                this.draw();
+            }
+        }
+
+        function init() {
+            particlesArray = [];
+            let numberOfParticles = (canvas.height * canvas.width) / 12000;
+            for (let i = 0; i < numberOfParticles; i++) {
+                let size = (Math.random() * 2) + 1;
+                let x = (Math.random() * ((innerWidth - size * 2) - (size * 2)) + size * 2);
+                let y = (Math.random() * ((innerHeight - size * 2) - (size * 2)) + size * 2);
+                let directionX = (Math.random() * 0.4) - 0.2;
+                let directionY = (Math.random() * 0.4) - 0.2;
+                let color = '#d2bbff';
+                particlesArray.push(new Particle(x, y, directionX, directionY, size, color));
+            }
+        }
+
+        function animate() {
+            requestAnimationFrame(animate);
+            ctx.clearRect(0, 0, innerWidth, innerHeight);
+            
+            // Respect prefers-reduced-motion
+            if(window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                return;
+            }
+
+            for (let i = 0; i < particlesArray.length; i++) {
+                particlesArray[i].update();
+            }
+        }
+
+        window.addEventListener('resize',
+            function() {
+                canvas.width = innerWidth;
+                canvas.height = innerHeight;
+                init();
+            }
+        );
+
+        init();
+        animate();
+    </script>
+</body></html>
