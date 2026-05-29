@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
     <title>Varun R - Portfolio</title>
+    
     <meta name="description" content="Portfolio of Varun R: Network Security Trainee and Computer Science graduate specializing in enterprise routing, physical Cisco configurations, and data analytics." />
     <meta name="robots" content="index, follow" />
     <meta property="og:title" content="Varun R - Portfolio" />
@@ -13,14 +14,26 @@
     <meta name="twitter:title" content="Varun R - Portfolio" />
     <meta name="twitter:description" content="Portfolio of Varun R: Network Security Trainee and Computer Science graduate specializing in enterprise routing, physical Cisco configurations, and data analytics." />
     
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=25" />
-    <link rel="shortcut icon" type="image/svg+xml" href="/favicon.svg?v=25" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=30" />
+    <link rel="shortcut icon" type="image/svg+xml" href="/favicon.svg?v=30" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
     <script type="module" crossorigin src="/assets/index-DoRgWYWH.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-vwse1WNl.css">
+
+    <script>
+      const matcher = window.matchMedia('(prefers-color-scheme: dark)');
+      function updateFavicon(e) {
+        const favicon = document.querySelector('link[rel="icon"]');
+        if (favicon) {
+          favicon.href = '/favicon.svg?v=' + Date.now();
+        }
+      }
+      matcher.addEventListener('change', updateFavicon);
+    </script>
   </head>
   <body>
     <div id="root"></div>
